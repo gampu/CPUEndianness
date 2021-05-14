@@ -1,0 +1,6 @@
+language: generic
+dist: bionic
+
+script:
+    - g++ -std=c++17 main.cpp -Wall -pedantic -O0 -g -ggdb3 -fsanitize=address
+    - time ./a.out
